@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>十进制转二进制</title>
+</head>
+<body>
+
+
+
+//使用栈实现十进制转二进制
+<script>
+    function Stack() {
+
+
+        this.items=[]
+
+        //压栈
+        Stack.prototype.push=function (element) {
+
+            this.items.push(element)
+        }
+
+        //从栈中取出元素
+        Stack.prototype.pop=function () {
+
+            return this.items.pop()
+        }
+
+        //查看栈顶元素
+        Stack.prototype.peek=function () {
+
+            return this.items[this.items.length-1]
+        }
+
+        //栈是否为空
+        Stack.prototype.isEmpty=function () {
+
+            return this.items.length==0
+        }
+
+        //栈中元素的个数
+        Stack.prototype.size=function () {
+
+            return this.items.length
+        }
+
+        //toString方法
+        Stack.prototype.toString=function () {
+
+            var resultString=''
+
+            for (var  i=0;i<this.items.length;i++){
+
+                resultString +=this.items[i]+''
+            }
+            return resultString
+        }
+    }
+
+    function dec2bin(decNumber) {
+
+        //定义栈对象
+        var stack=new Stack();
+
+        //循环操作
+        while (decNumber>0){
+
+            //获取余数，放入栈中
+            stack.push(decNumber%2);
+
+            //获取整除后的结果，作为下一次运行的数字
+            decNumber=Math.floor(decNumber/2)
+        }
+            //从栈中取出0和1
+            var binaryString ='';
+
+            while (!stack.isEmpty()){
+                binaryString+=stack.pop()
+            }
+            return binaryString
+
+    }
+
+    //测试十进制转二进制函数
+    alert(dec2bin(100))
+    alert(dec2bin(10))
+    alert(dec2bin(1000))
+
+    
+
+
+</script>
+
+
+
+
+</body>
+</html>
