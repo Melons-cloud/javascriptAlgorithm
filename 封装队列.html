@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>队列</title>
+</head>
+<body>
+
+<script>
+
+
+    //封装队列
+    function Queue() {
+
+        //属性
+        this.items=[];
+
+        //方法
+        //元素加入到队列中
+
+        Queue.prototype.enqueue=function (element) {
+
+            this.items.push(element)
+
+
+        }
+
+        //从队列中删除前段元素
+        Queue.prototype.dequeue=function () {
+
+            return this.items.shift()
+    }
+
+        //查看前段元素
+        Queue.prototype.front=function () {
+
+            return this.items[0]
+        }
+
+        //查看队列是否为空
+        Queue.prototype.isEmpty=function () {
+
+            return this.items.length==0
+
+        }
+
+        //查看队列中元素的个数
+        Queue.prototype.size=function () {
+
+            return this.items.length
+        }
+        //toString
+        Queue.prototype.toString=function () {
+            var resultString=''
+
+            for (var  i=0;i<this.items.length;i++){
+
+                resultString +=this.items[i]+''
+            }
+            return resultString
+        }
+    }
+
+    //使用队列
+    var queue =new Queue();
+    queue.enqueue("abc ")
+    queue.enqueue("2121 ")
+    queue.enqueue("2asda ")
+    queue.enqueue("212121 ")
+    alert(queue)
+
+
+    //删除队列元素
+    queue.dequeue()
+    alert(queue)
+    queue.dequeue()
+    alert(queue)
+    queue.dequeue()
+    alert(queue)
+
+    //front
+    alert(queue.front())
+
+
+    //其他
+    alert(queue.isEmpty())
+    alert(queue.size())
+
+
+
+</script>
+
+</body>
+</html>
