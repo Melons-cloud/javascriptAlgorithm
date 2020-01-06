@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4130658e-ae8a-40d3-a64a-b02471c02333" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/十进制转二进制.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/栈的封装.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/十进制转二进制.html" beforeDir="false" afterPath="$PROJECT_DIR$/十进制转二进制.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +25,7 @@
       </GitPushTagMode>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="IgnoredFileRootStore">
     <option name="generatedRoots">
@@ -37,6 +36,7 @@
   </component>
   <component name="ProjectId" id="1W1aqpDTC7qqtcV6iptaahcE4KN" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="false" id="Update" />
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -72,14 +72,32 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1578319747665</updated>
-      <workItem from="1578319748814" duration="3062000" />
+      <workItem from="1578319748814" duration="5636000" />
+      <workItem from="1578325622741" duration="36000" />
+      <workItem from="1578326120770" duration="265000" />
     </task>
+    <task id="LOCAL-00001" summary="javascript算法">
+      <created>1578322971470</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1578322971470</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="javascript算法" />
+    <option name="LAST_COMMIT_MESSAGE" value="javascript算法" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="584" y="117" width="867" height="842" key="CommitChangelistDialog2" timestamp="1578322971401">
+      <screen x="0" y="27" width="1920" height="987" />
+    </state>
+    <state x="584" y="117" width="867" height="842" key="CommitChangelistDialog2/0.27.1920.987@0.27.1920.987" timestamp="1578322971401" />
     <state x="978" y="583" width="355" height="238" key="Github.ShareDialog" timestamp="1578319795802">
       <screen x="0" y="27" width="1920" height="987" />
     </state>
@@ -88,9 +106,17 @@
       <screen x="0" y="27" width="1920" height="987" />
     </state>
     <state x="988" y="282" width="517" height="595" key="Github.UntrackedFilesDialog/0.27.1920.987@0.27.1920.987" timestamp="1578319823559" />
-    <state x="846" y="310" width="800" height="538" key="Vcs.Push.Dialog.v2" timestamp="1578319846395">
+    <state x="846" y="310" width="800" height="538" key="Vcs.Push.Dialog.v2" timestamp="1578325643227">
       <screen x="0" y="27" width="1920" height="987" />
     </state>
-    <state x="846" y="310" width="800" height="538" key="Vcs.Push.Dialog.v2/0.27.1920.987@0.27.1920.987" timestamp="1578319846395" />
+    <state x="846" y="310" width="800" height="538" key="Vcs.Push.Dialog.v2/0.27.1920.987@0.27.1920.987" timestamp="1578325643227" />
+    <state x="785" y="584" width="467" height="175" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1578325596810">
+      <screen x="0" y="27" width="1920" height="987" />
+    </state>
+    <state x="785" y="584" width="467" height="175" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.27.1920.987@0.27.1920.987" timestamp="1578325596810" />
+    <state x="648" y="321" width="749" height="446" key="git4idea.merge.GitPullDialog" timestamp="1578325650843">
+      <screen x="0" y="27" width="1920" height="987" />
+    </state>
+    <state x="648" y="321" width="749" height="446" key="git4idea.merge.GitPullDialog/0.27.1920.987@0.27.1920.987" timestamp="1578325650843" />
   </component>
 </project>
