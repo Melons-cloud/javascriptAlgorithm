@@ -62,30 +62,72 @@
     }
 
     //使用队列
-    var queue =new Queue();
-    queue.enqueue("abc ")
-    queue.enqueue("2121 ")
-    queue.enqueue("2asda ")
-    queue.enqueue("212121 ")
-    alert(queue)
+    // var queue =new Queue();
+    // queue.enqueue("abc ")
+    // queue.enqueue("2121 ")
+    // queue.enqueue("2asda ")
+    // queue.enqueue("212121 ")
+    // alert(queue)
+    //
+    //
+    // //删除队列元素
+    // queue.dequeue()
+    // alert(queue)
+    // queue.dequeue()
+    // alert(queue)
+    // queue.dequeue()
+    // alert(queue)
+    //
+    // //front
+    // alert(queue.front())
+    //
+    //
+    // //其他
+    // alert(queue.isEmpty())
+    // alert(queue.size())
 
 
-    //删除队列元素
-    queue.dequeue()
-    alert(queue)
-    queue.dequeue()
-    alert(queue)
-    queue.dequeue()
-    alert(queue)
-
-    //front
-    alert(queue.front())
+    //击鼓传花
+    function passGame(namelist,num) {
 
 
-    //其他
-    alert(queue.isEmpty())
-    alert(queue.size())
+        //创建一个队列
+        var queue=new Queue();
 
+        //将所有人依次加入队列中
+
+        for (var i=0;i<namelist.length;i++){
+
+            queue.enqueue(namelist[i]);
+        }
+
+
+        while (queue.size()>1){
+            //开始数数字,不是num的时候，重新加入到末尾.是num,从队列中删除。num数字之前的人重新放入到队列末尾
+            for (var i=0;i<num-1;i++){
+
+                queue.enqueue(queue.dequeue())
+            }
+
+            //num对应的这个人，直接淘汰
+            queue.dequeue()
+
+
+        }
+
+        //获取剩下的那个人
+        alert(queue.size())
+        var endName=queue.front()
+        alert("最终剩下的人:"+endName)
+
+        return namelist.indexOf(endName)
+
+    }
+
+
+    //测试击鼓传花
+    names=["tom","martin","ass","word","jerry"]
+    alert(passGame(names,3))
 
 
 </script>
